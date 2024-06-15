@@ -4,10 +4,10 @@
 `./fig/figure.jpg`
 
 ## 使用方法(Docker)
-1. 建立 image
+1. 建立 image：
     `sudo bash init.sh` 或 `sudo docker build -t project .`
 
-2. 執行
+2. 執行：
     `sudo bash run.sh` 或 `sudo docker run -it -v $(pwd):/app project`
 
 ## 使用方法(一般環境)
