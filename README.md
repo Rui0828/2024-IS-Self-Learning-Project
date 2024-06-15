@@ -1,6 +1,6 @@
 `2024-NCHU CSE-資訊安全與密碼學 Self-Learning Project`
 # 醫學圖像加密的研究與應用
-* Reference: [A New 12-Bit Chaotic Image Encryption Scheme Using a 12 × 12 Dynamic S-Box](https://ieeexplore.ieee.org/document/10460526)
+> Reference: [A New 12-Bit Chaotic Image Encryption Scheme Using a 12 × 12 Dynamic S-Box](https://ieeexplore.ieee.org/document/10460526)
 
 ## Encryption and Decryption Result
 ![image](./result/result.png)
