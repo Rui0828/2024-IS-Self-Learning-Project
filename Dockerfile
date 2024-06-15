@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir -r requirement.txt
 
 COPY . .
 
-CMD ["python", "main.py"]
+CMD ["python", "main.py", "analysis.py"]

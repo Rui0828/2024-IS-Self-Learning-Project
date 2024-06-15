@@ -8,7 +8,7 @@ from module.analysis_util import calculate_entropy, cross_correlation, spatial_a
 
 PIXEL_RANGE = 4096 # 像素值範圍
 SEED_LEN = 16
-PLAIN_IMAGE_PATH = "./fig/LINE_ALBUM_2023.2.8_230208_11.jpg"
+PLAIN_IMAGE_PATH = "./fig/figure.jpg"
 
 
 # plot image and histogram
