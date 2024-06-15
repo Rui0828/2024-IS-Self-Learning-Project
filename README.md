@@ -1,8 +1,9 @@
 # 2024-NCHU CSE-資訊安全與密碼學 Self-Learning Project
 
 ## 字定義圖片路徑
-`./fig/figure.jpg## 使用方法(Docker)`
+`./fig/figure.jpg
 
+## 使用方法(Docker)`
 1. 建立 image
     `sudo bash init.sh` 或 `sudo docker build -t project .`
 
@@ -10,7 +11,6 @@
     `sudo bash run.sh` 或 `sudo docker run -it -v $(pwd):/app project`
 
 ## 使用方法(一般環境)
-
 1. 安裝必要的套件：
     `pip install -r requirements.txt`
 
