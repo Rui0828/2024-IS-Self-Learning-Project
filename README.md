@@ -1,6 +1,6 @@
 # 2024-NCHU CSE-資訊安全與密碼學 Self-Learning Project
 
-## 字定義圖片路徑
+## 自定義圖片路徑
 `./fig/figure.jpg
 
 ## 使用方法(Docker)`
