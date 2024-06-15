@@ -1,4 +1,5 @@
 # 2024-NCHU CSE-資訊安全與密碼學 Self-Learning Project
+![image](./result/result.png)
 
 ## 自定義圖片路徑
 `./fig/figure.jpg`
