@@ -3,7 +3,7 @@
 ## 自定義圖片路徑
 `./fig/figure.jpg`
 
-## 使用方法(Docker)`
+## 使用方法(Docker)
 1. 建立 image
     `sudo bash init.sh` 或 `sudo docker build -t project .`
 
