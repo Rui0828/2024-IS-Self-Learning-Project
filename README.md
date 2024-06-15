@@ -15,10 +15,9 @@
     `pip install -r requirements.txt`
 
 2. 執行程式：
-    * 執行加解密程式: `python main.py`
-    * 執行效能分析程式: `python analysis.py`
+    * 執行加解密程式：`python main.py`
+    * 執行效能分析程式：`python analysis.py`
 
 ## 注意事項
-
 - 請確保已安裝 Python 和 pip。
 - 如果使用 Docker 執行的話，請確保已安裝 Docker。
