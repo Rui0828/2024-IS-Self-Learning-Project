@@ -61,24 +61,5 @@ def generate_chaotic_mask_3d(seed, image_size, a=0.921064, b=0.040442):
     return chaotic_mask
 
 
-
-
-
 if __name__ == "__main__":
-    print("--------------- Util module test ---------------")
     print("Warning: This is a module file, import it to use.")
-    print("------------------------------------------------")
-    print("PRNG initialization test:")
-    prng = initialize_prng(16)
-    random_numbers = prng.random(size=10) # 產生10個隨機數
-    print("Random numbers:", random_numbers)
-    print("------------------------------------------------")
-    print("S-Box construction test:")
-    pixel_range = 4096 # 8-bit像素範圍
-    sbox = construct_sbox(prng, pixel_range) # 建立S-Box
-    print("S-Box:", sbox)
-    print("------------------------------------------------")
-    chaotic_mask_3d = generate_chaotic_mask_3d(random_numbers, (512, 512, 3)) # 生成3D混沌遮罩
-    print("3D chaotic mask shape:", chaotic_mask_3d.shape)
-    print("------------------------------------------------")
-    print("---------  Util module test completed ----------")

@@ -45,7 +45,5 @@ def decrypt_image_3d(encrypted_image, sbox, chaotic_mask):
     return decrypted_image
 
 
-
-
 if __name__ == "__main__":
     print("This is a module file, import it to use.")
