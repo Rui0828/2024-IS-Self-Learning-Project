@@ -49,12 +49,6 @@ if __name__ == "__main__":
     encrypted_array = np.array(encrypted_image)
     print("Image encrypted successfully.")
 
-    # 修改 5% 像素值
-    modified_image_array = np.copy(image_array)
-    modified_image_array = modify_image_pixels(modified_image_array, 0.05)
-    modified_encrypted_image = encrypt_image_3d(modified_image_array, sbox, chaotic_mask_3d)
-    print("Image modified successfully.")
-    
     print("\n------------- Analysis Result -------------")
     # 計算圖像的熵
     entropy = calculate_entropy(image_array)
@@ -75,29 +69,6 @@ if __name__ == "__main__":
     print("p-value:", p)
     print("------------------------------------------")
     
-    # 計算 Differential Analysis 的 npcr 以及 uaci
-    display_analysis_results(modified_image_array, encrypted_image-modified_encrypted_image)
-    #display_analysis_results(modified_image_array, modified_encrypted_image)
-    npcr_rate = calculate_npcr(encrypted_image, modified_encrypted_image)
-    uaci_value = calculate_uaci(encrypted_image, modified_encrypted_image)
-    print("\n------------- Differential Analysis Results -------------")
-    print("NPCR (Normalized Pixel Change Rate):", npcr_rate)
-    print("UACI (Unified Average Changing Intensity):", uaci_value)
-    print("----------------------------------------------------------")
-
-    # 計算 Key Sensitivity 的 npcr 以及 uaci
-    # 測試 sbox sensitivity
-    npcr_rate, uaci_value = measure_key_sensitivity(encrypted_image, image_array, sbox_2, chaotic_mask_3d)
-    print("\n------------- Key Sensitivity Analysis Results -------------")
-    print("NPCR (Normalized Pixel Change Rate):", npcr_rate)
-    print("UACI (Unified Average Changing Intensity):", uaci_value)
-    # 測試 chaotic map sensitivity
-    npcr_rate, uaci_value = measure_key_sensitivity(encrypted_image, image_array, sbox, chaotic_mask_3d_2)
-    print("NPCR (Normalized Pixel Change Rate):", npcr_rate)
-    print("UACI (Unified Average Changing Intensity):", uaci_value)
-    print("----------------------------------------------------------")
-
-
     # 顯示加密前後的圖片和直方圖
     display_analysis_results(image_array, encrypted_image)
     

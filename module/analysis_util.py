@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import chisquare
 from module.cryptography import encrypt_image_3d
-from PIL import Image
 
 PIXEL_RANGE = 4096 # 像素值範圍
 
@@ -81,4 +80,3 @@ def modify_image_pixels(image_array, percentage):
 
 if __name__ == "__main__":
     print("Warning: This is a module file, import it to use.")
- 
