@@ -1,5 +1,4 @@
 import numpy as np
-from module.util import fisher_yates_shuffle
 
 # 加密影像
 def encrypt_image_3d(plain_image, sbox, chaotic_mask):
@@ -11,7 +10,7 @@ def encrypt_image_3d(plain_image, sbox, chaotic_mask):
                 I_i = plain_image[i, j, k] # 取得原始像素值
                 M_i = chaotic_mask[i, j, k] # 取得混沌遮罩值 
                 M_i_prime = int(bin(M_i)[2:][::-1], 2) % 256  # 翻轉二進位表示
-                
+
                 S_M_i = sbox[M_i]
                 S_M_i_prime = sbox[M_i_prime]
                 

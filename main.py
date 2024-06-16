@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
-from module.util import initialize_prng, generate_chaotic_mask_3d, construct_sbox, fisher_yates_shuffle, baker_map
+from module.util import initialize_prng, generate_chaotic_mask_3d, construct_sbox
 from module.cryptography import encrypt_image_3d, decrypt_image_3d
 
 
@@ -19,12 +19,19 @@ def get_image_data(plain_image):
         image_array = np.stack((image_array,)*3, axis=-1)
 
     prng = initialize_prng(SEED_LEN)  # PRNG 初始化
-    sbox = construct_sbox(prng, PIXEL_RANGE) # 建立S-Box
+    sbox_seed = prng.integers(0, 2**32)
+    sbox = construct_sbox(sbox_seed, PIXEL_RANGE) # 建立S-Box
+    modified_seed = sbox_seed
+    modified_seed ^= 1
+    sbox_2 = construct_sbox(modified_seed, PIXEL_RANGE) # 建立S-Box2
     
-    chaotic_seed = prng.random(size=SEED_LEN)
+    chaotic_seed = prng.integers(0, 2**32)
     chaotic_mask_3d = generate_chaotic_mask_3d(chaotic_seed, image_size)
-    
-    return image_array, sbox, chaotic_mask_3d
+    modified_seed = chaotic_seed
+    modified_seed ^= 1
+    chaotic_mask_3d_2 = generate_chaotic_mask_3d(modified_seed, image_size)
+
+    return image_array, sbox, chaotic_mask_3d, sbox_2, chaotic_mask_3d_2
 
 def display_image(plain_image, encrypted_image_display, decrypted_image):
     fig, axes = plt.subplots(1, 3, figsize=(15, 5))  # Create a figure and subplots
@@ -45,7 +52,7 @@ def display_image(plain_image, encrypted_image_display, decrypted_image):
 
 if __name__ == "__main__":
     plain_image = Image.open(PLAIN_IMAGE_PATH)
-    image_array, sbox, chaotic_mask_3d = get_image_data(plain_image)
+    image_array, sbox, chaotic_mask_3d, sbox_2, chaotic_mask_3d_2 = get_image_data(plain_image)
     print("Image data loaded successfully.")
     
     # 加密圖像
