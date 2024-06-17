@@ -6,12 +6,6 @@
 # 醫學圖像加密的研究與應用
 > Reference:  [A New 12-Bit Chaotic Image Encryption Scheme Using a 12 × 12 Dynamic S-Box](https://ieeexplore.ieee.org/document/10460526)
 
-## Encryption and Decryption Result
-![image](./result/result.png)
-
-## Analysis Result
-![image](./result/analysis.png)
-
 ## 使用方法(Docker)
 1. 建立 image：
     `sudo bash init.sh` 或 `sudo docker build -t project .`
@@ -30,3 +24,11 @@
 ## 注意事項
 - 請確保已安裝 Python 和 pip。
 - 如果使用 Docker 執行的話，請確保已安裝 Docker。
+
+## Encryption and Decryption Result
+![image](./result/result.png)
+
+## Analysis Result
+![image](./result/analysis.png)
+
+
