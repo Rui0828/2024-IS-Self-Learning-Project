@@ -7,7 +7,7 @@ from module.cryptography import encrypt_image_3d, decrypt_image_3d
 
 PIXEL_RANGE = 4096 # 像素值範圍
 SEED_LEN = 16
-PLAIN_IMAGE_PATH = "./fig/4.png"
+PLAIN_IMAGE_PATH = "./fig/1.jpg"
 
 
 def get_image_data(plain_image):

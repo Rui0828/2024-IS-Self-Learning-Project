@@ -1,0 +1,15 @@
+------------- Analysis Result -------------
+Entropy: 7.731389288288467
+Horizontal spatial autocorrelation: 0.000930383471215043
+Vertical spatial autocorrelation: 0.0011846190828405537
+Diagonal spatial autocorrelation: 0.0009227951268705832
+Chi-square value: 5727.122326293236
+p-value: 1.6485397136919323e-58
+------------------------------------------
+
+------------- Key Sensitivity Analysis Results -------------
+NPCR (Normalized Pixel Change Rate): 99.96939087848179
+UACI (Unified Average Changing Intensity): 25.71877048560471
+NPCR (Normalized Pixel Change Rate): 99.95071931435568
+UACI (Unified Average Changing Intensity): 25.479612656571657
+----------------------------------------------------------

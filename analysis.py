@@ -8,7 +8,7 @@ from module.analysis_util import calculate_entropy, cross_correlation, spatial_a
 
 PIXEL_RANGE = 4096 # 像素值範圍
 SEED_LEN = 16
-PLAIN_IMAGE_PATH = "./fig/4.png"
+PLAIN_IMAGE_PATH = "./fig/1.png"
 
 
 # plot image and histogram
@@ -49,11 +49,6 @@ if __name__ == "__main__":
     encrypted_array = np.array(encrypted_image)
     print("Image encrypted successfully.")
 
-    # 修改 5% 像素值
-    modified_image_array = np.copy(image_array)
-    modified_image_array = modify_image_pixels(modified_image_array, 0.05)
-    modified_encrypted_image = encrypt_image_3d(modified_image_array, sbox, chaotic_mask_3d)
-    print("Image modified successfully.")
     
     print("\n------------- Analysis Result -------------")
     # 計算圖像的熵
