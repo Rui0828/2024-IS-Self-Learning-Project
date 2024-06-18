@@ -44,7 +44,7 @@
     | 圖2 (手部CT)  	| 7.731   	| 0.0009         	| 0.0012       	| 0.0009       	|
     | 圖3 (腦部MRI) 	| 5.222   	| -0.0021        	| 0.0008       	| -0.0011      	|
 
-    * **note: ac. means autocorrelation**
+    > **note: ac. means autocorrelation**
 
 2. 密鑰敏感度 (Key Sensitivity)
 
