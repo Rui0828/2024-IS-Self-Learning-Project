@@ -30,10 +30,8 @@
 ## Encryption and Decryption Result
 * 圖1(肺部CT)：
 ![image](./result/1_cryptography_result.png)
-
 * 圖2(手部CT)：
 ![image](./result/2_cryptography_result.png)
-
 * 圖3(腦部MRI)：
 ![image](./result/3_cryptography_result.png)
 
@@ -59,10 +57,8 @@
 
 * 圖1(肺部CT)：
 ![image](./result/1_analysis.png)
-
 * 圖2(手部CT)：
 ![image](./result/2_analysis.png)
-
 * 圖3(腦部MRI)：
 ![image](./result/3_analysis.png)
 
