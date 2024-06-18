@@ -7,7 +7,7 @@ from module.cryptography import encrypt_image_3d, decrypt_image_3d
 
 PIXEL_RANGE = 4096 # 像素值範圍
 SEED_LEN = 16
-PLAIN_IMAGE_PATH = "./fig/figure.jpg"
+PLAIN_IMAGE_PATH = "./fig/4.png"
 
 
 def get_image_data(plain_image):
@@ -52,7 +52,7 @@ def display_image(plain_image, encrypted_image_display, decrypted_image):
 
 if __name__ == "__main__":
     plain_image = Image.open(PLAIN_IMAGE_PATH)
-    image_array, sbox, chaotic_mask_3d, sbox_2, chaotic_mask_3d_2 = get_image_data(plain_image)
+    image_array, sbox, chaotic_mask_3d, _, _ = get_image_data(plain_image)
     print("Image data loaded successfully.")
     
     # 加密圖像

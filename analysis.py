@@ -3,12 +3,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 from main import get_image_data
 from module.cryptography import encrypt_image_3d
-from module.analysis_util import calculate_entropy, cross_correlation, spatial_autocorrelation, chi_square_test, calculate_npcr, calculate_uaci, measure_key_sensitivity, modify_image_pixels
+from module.analysis_util import calculate_entropy, cross_correlation, spatial_autocorrelation, chi_square_test, measure_key_sensitivity, modify_image_pixels
 
 
 PIXEL_RANGE = 4096 # 像素值範圍
 SEED_LEN = 16
-PLAIN_IMAGE_PATH = "./fig/5.jpg"
+PLAIN_IMAGE_PATH = "./fig/4.png"
 
 
 # plot image and histogram
@@ -49,6 +49,12 @@ if __name__ == "__main__":
     encrypted_array = np.array(encrypted_image)
     print("Image encrypted successfully.")
 
+    # 修改 5% 像素值
+    modified_image_array = np.copy(image_array)
+    modified_image_array = modify_image_pixels(modified_image_array, 0.05)
+    modified_encrypted_image = encrypt_image_3d(modified_image_array, sbox, chaotic_mask_3d)
+    print("Image modified successfully.")
+    
     print("\n------------- Analysis Result -------------")
     # 計算圖像的熵
     entropy = calculate_entropy(image_array)
@@ -67,8 +73,21 @@ if __name__ == "__main__":
     chi2, p = chi_square_test(encrypted_array)
     print("Chi-square value:", chi2)
     print("p-value:", p)
-    print("------------------------------------------")
     
+
+    # 計算 Key Sensitivity 的 npcr 以及 uaci
+    # 測試 sbox sensitivity
+    npcr_rate, uaci_value = measure_key_sensitivity(encrypted_image, image_array, sbox_2, chaotic_mask_3d)
+    print("\n----------- Key Sensitivity Analysis Results -----------")
+    print("NPCR (Normalized Pixel Change Rate):", npcr_rate)
+    print("UACI (Unified Average Changing Intensity):", uaci_value)
+    # 測試 chaotic map sensitivity
+    npcr_rate, uaci_value = measure_key_sensitivity(encrypted_image, image_array, sbox, chaotic_mask_3d_2)
+    print("NPCR (Normalized Pixel Change Rate):", npcr_rate)
+    print("UACI (Unified Average Changing Intensity):", uaci_value)
+    print("----------------------------------------------------------")
+
+
     # 顯示加密前後的圖片和直方圖
     display_analysis_results(image_array, encrypted_image)
     

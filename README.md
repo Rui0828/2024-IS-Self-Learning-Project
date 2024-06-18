@@ -3,10 +3,10 @@
 > Reference:  [A New 12-Bit Chaotic Image Encryption Scheme Using a 12 × 12 Dynamic S-Box](https://ieeexplore.ieee.org/document/10460526)
 
 ## Encryption and Decryption Result
-![image](./result/result.png)
+![image](./result/result_hand.png)
 
 ## Analysis Result
-![image](./result/analysis.png)
+![image](./result/analysis_hand.png)
 
 ## 使用方法(Docker)
 1. 建立 image：

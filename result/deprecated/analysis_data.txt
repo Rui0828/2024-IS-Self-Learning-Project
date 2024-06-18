@@ -1,0 +1,118 @@
+Figure: hand.jpg
+------------- Analysis Result -------------
+Entropy: 7.731389288288467
+Horizontal spatial autocorrelation: 0.00026873688055804195
+Vertical spatial autocorrelation: 0.00011621487297841172
+Diagonal spatial autocorrelation: -0.0006764151713554337
+Chi-square value: 5698.4114600550965
+p-value: 9.778011445492039e-57
+
+----------- Key Sensitivity Analysis Results -----------
+NPCR (Normalized Pixel Change Rate): 99.97979797979798
+UACI (Unified Average Changing Intensity): 128.73903551258275
+NPCR (Normalized Pixel Change Rate): 99.95469850015304
+UACI (Unified Average Changing Intensity): 128.4691082902705
+----------------------------------------------------------
+
+
+Figure: dog.jpg
+------------- Analysis Result -------------
+Entropy: 7.614637998086542
+Horizontal spatial autocorrelation: 0.0003876832461678991
+Vertical spatial autocorrelation: -6.620572565374354e-06
+Diagonal spatial autocorrelation: 0.0002932934669792892
+Chi-square value: 38534.24822134388
+p-value: 0.0
+
+----------- Key Sensitivity Analysis Results -----------
+NPCR (Normalized Pixel Change Rate): 99.97326722190853
+UACI (Unified Average Changing Intensity): 128.6292163326958
+NPCR (Normalized Pixel Change Rate): 99.9509899068323
+UACI (Unified Average Changing Intensity): 128.42303047775434
+----------------------------------------------------------
+
+
+Figure: 0.png
+------------- Analysis Result -------------
+Entropy: 6.665137794393516
+Horizontal spatial autocorrelation: -0.0007379915239761905
+Vertical spatial autocorrelation: 0.0010623282431471237
+Diagonal spatial autocorrelation: -6.490066193919987e-05
+Chi-square value: 23694.0625
+p-value: 0.0
+
+----------- Key Sensitivity Analysis Results -----------
+NPCR (Normalized Pixel Change Rate): 99.97838338216147
+UACI (Unified Average Changing Intensity): 128.09952641904744
+NPCR (Normalized Pixel Change Rate): 99.95447794596353
+UACI (Unified Average Changing Intensity): 128.37990206550148
+----------------------------------------------------------
+
+
+Figure: 1.png
+------------- Analysis Result -------------
+Entropy: 6.2292560863158855
+Horizontal spatial autocorrelation: 0.0010858882909462538
+Vertical spatial autocorrelation: 0.0010469514477986779
+Diagonal spatial autocorrelation: 0.00010925049977080186
+Chi-square value: 50410.322916666664
+p-value: 0.0
+
+----------- Key Sensitivity Analysis Results -----------
+NPCR (Normalized Pixel Change Rate): 99.97126261393228
+UACI (Unified Average Changing Intensity): 128.47316565420113
+NPCR (Normalized Pixel Change Rate): 99.95295206705728
+UACI (Unified Average Changing Intensity): 128.1585128983641
+----------------------------------------------------------
+
+
+Figure: 2.png
+------------- Analysis Result -------------
+Entropy: 6.2292560863158855
+Horizontal spatial autocorrelation: 0.0010858882909462538
+Vertical spatial autocorrelation: 0.0010469514477986779
+Diagonal spatial autocorrelation: 0.00010925049977080186
+Chi-square value: 50410.322916666664
+p-value: 0.0
+
+----------- Key Sensitivity Analysis Results -----------
+NPCR (Normalized Pixel Change Rate): 99.97126261393228
+UACI (Unified Average Changing Intensity): 128.47316565420113
+NPCR (Normalized Pixel Change Rate): 99.95295206705728
+UACI (Unified Average Changing Intensity): 128.1585128983641
+----------------------------------------------------------
+
+
+Figure: 3.png
+------------- Analysis Result -------------
+Entropy: 6.905116177038919
+Horizontal spatial autocorrelation: -0.0008047467838331109
+Vertical spatial autocorrelation: 0.0006584306518083413
+Diagonal spatial autocorrelation: -0.0018457691782618358
+Chi-square value: 22996.791666666664
+p-value: 0.0
+
+----------- Key Sensitivity Analysis Results -----------
+NPCR (Normalized Pixel Change Rate): 99.97901916503906
+UACI (Unified Average Changing Intensity): 128.75581472558912
+NPCR (Normalized Pixel Change Rate): 99.95269775390625
+UACI (Unified Average Changing Intensity): 128.48324714112127
+----------------------------------------------------------
+
+
+
+Figure: 4.png
+------------- Analysis Result -------------
+Entropy: 6.627455880349713
+Horizontal spatial autocorrelation: -0.0008287200081928385
+Vertical spatial autocorrelation: 0.0005000891796038767
+Diagonal spatial autocorrelation: 0.0009922984442993668
+Chi-square value: 24115.583333333332
+p-value: 0.0
+
+----------- Key Sensitivity Analysis Results -----------
+NPCR (Normalized Pixel Change Rate): 99.98308817545572
+UACI (Unified Average Changing Intensity): 128.41444777445076
+NPCR (Normalized Pixel Change Rate): 99.94455973307291
+UACI (Unified Average Changing Intensity): 128.717768585604
+----------------------------------------------------------

@@ -1,6 +1,0 @@
-Entropy: 7.731389288288467
-Horizontal spatial autocorrelation: 0.0023019282286372033
-Vertical spatial autocorrelation: -0.000388784228002565
-Diagonal spatial autocorrelation: -0.0037352608541583307
-Chi-square value: 5785.923183348637
-p-value: 3.2848835193587508e-62
